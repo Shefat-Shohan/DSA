@@ -23,6 +23,7 @@ const pairSum = (nums, target) => {
 };
 pairSum(elments, target);
 
+// ------------- && ---------------------
 // Given an array nums of size n, return the majority element
 
 let nums = [1, 2, 1, 2, 8, 2, 2];
@@ -49,4 +50,28 @@ function majorityElem(arr) {
 }
 majorityElem(sortedArray);
 
-//nlogn
+// Time Complexity: O(nlogn)
+
+// ----------------- && ---------------
+// Moore's voting algorithm
+let num = [1, 2, 1, 2, 8, 2, 2];
+
+function mjElement(arr) {
+  let freq = 0;
+  let ans = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (freq == 0) {
+      ans = arr[i];
+    }
+    if (ans == arr[i]) {
+      freq++;
+    } else {
+      freq--;
+    }
+  }
+  return ans;
+}
+mjElement(num);
+
+// Time Complexity:  𝑂(𝑛). Single pass through the array
