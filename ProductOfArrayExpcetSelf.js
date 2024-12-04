@@ -1,6 +1,6 @@
 // Product of array except self
 
-// Solution I brute force.
+// Solution 1 brute force.
 let arr = [1, 2, 3, 4];
 // the answer should be like this = [24,12,8,6] & can't use division
 function producOfArray(arr) {
