@@ -1,4 +1,4 @@
-// Search in Rotated Sorted Array 
+// Search in Rotated Sorted Array
 let arr = [4, 5, 6, 7, 0, 1, 2];
 let target = 0;
 

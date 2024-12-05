@@ -6,7 +6,7 @@ function binarySearch(arr, tar) {
   let st = 0;
   let end = arr.length - 1;
   while (st <= end) {
-    let mid = st + Math.floor((end - st) / 2);
+    let mid = Math.floor(st + (end - st) / 2);
     if (tar > arr[mid]) {
       st = mid + 1; // 2nd hlf
     } else if (tar < arr[mid]) {
