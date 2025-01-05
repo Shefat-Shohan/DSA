@@ -10,7 +10,7 @@ return -1 if a valid assignment is not possible.
 */
 
 let arr = [2, 1, 3, 4];
-let n = arr.length; // number of pages
+let n = arr.length; 
 let m = 2; // number of student
 
 function isValid(m, n, arr, maximumAllowedPages) {
