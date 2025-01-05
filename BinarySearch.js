@@ -20,3 +20,5 @@ function binarySearch(arr, tar) {
 
 let ans = binarySearch(arr, target);
 console.log(arr[ans]);
+
+// mid = st + (end - st) /2
