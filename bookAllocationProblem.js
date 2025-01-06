@@ -10,7 +10,7 @@ return -1 if a valid assignment is not possible.
 */
 
 let arr = [2, 1, 3, 4];
-let n = arr.length; 
+let n = arr.length;
 let m = 2; // number of student
 
 function isValid(m, n, arr, maximumAllowedPages) {
@@ -20,7 +20,7 @@ function isValid(m, n, arr, maximumAllowedPages) {
   for (let i = 0; i < n; i++) {
     if (arr[i] > maximumAllowedPages) {
       return false;
-    }``
+    }
     if (pages + arr[i] <= maximumAllowedPages) {
       pages += arr[i];
     } else {
